@@ -37,7 +37,7 @@ async function getJokeRequest() {
 }
 
 async function sendMessageToSlack(message: string) {
-  const channelId = 'C01AD6EDCP3';
+  const channelId = 'C019XEWC8J1';
 
   const response = await axios.post(
     `https://slack.com/api/chat.postMessage`,
