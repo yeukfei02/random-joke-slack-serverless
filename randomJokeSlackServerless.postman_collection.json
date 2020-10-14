@@ -13,14 +13,7 @@
 					"name": "/get-joke",
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "",
-								"value": "",
-								"type": "text",
-								"disabled": true
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "localhost:3000/v1/api/joke/get-joke",
 							"host": [
@@ -112,7 +105,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"text\": \"programming\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
