@@ -37,21 +37,16 @@ async function getJokeRequest() {
 }
 
 async function sendMessageToSlack(message: string) {
-  const channelId = 'C019XEWC8J1';
-
-  const response = await axios.post(
-    `https://slack.com/api/chat.postMessage`,
-    {
+  const response = await axios.get(`https://slack.com/api/chat.postMessage`, {
+    params: {
       token: process.env.SLACK_OAUTH_TOKEN,
-      channel: channelId,
+      channel: 'random',
       text: message,
     },
-    {
-      headers: {
-        'Content-Type': 'application/json',
-      },
+    headers: {
+      'Content-Type': 'application/json',
     },
-  );
+  });
   if (response) {
     const responseData = response.data;
     console.log('responseData = ', responseData);
