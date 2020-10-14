@@ -1,0 +1,24 @@
+service: random-joke-slack-serverless
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: v1
+  region: ap-southeast-1
+  environment:
+    NODE_ENV: production
+
+functions:
+  getJoke:
+    handler: src/getJoke/handler.getJoke
+    events:
+      - http:
+          path: /api/get-joke
+          method: get
+          cors: true
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
