@@ -9,8 +9,8 @@ import { Joke } from '../../interface/Joke';
 export const getJoke: Handler = async (event: any) => {
   const jokeResult: Joke = await getJokeRequest();
   if (jokeResult) {
-    const message = `Setup: ${jokeResult.setup} Punchline: ${jokeResult.punchline}`;
-    await sendMessageToSlack(message);
+    const message = `*Setup:* ${jokeResult.setup}\n*Punchline:* ${jokeResult.punchline}`;
+    await sendMessageToSlackChannel(message);
   }
 
   const response = {
@@ -36,7 +36,7 @@ async function getJokeRequest() {
   return result;
 }
 
-async function sendMessageToSlack(message: string) {
+async function sendMessageToSlackChannel(message: string) {
   const response = await axios.get(`https://slack.com/api/chat.postMessage`, {
     params: {
       token: process.env.SLACK_OAUTH_TOKEN,
