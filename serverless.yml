@@ -13,6 +13,14 @@ provider:
     NODE_ENV: production
 
 functions:
+  main:
+    handler: src/getMain/handler.getMain
+    events:
+      - http:
+          path: /api/joke
+          method: get
+          cors: true
+
   getJoke:
     handler: src/getJoke/handler.getJoke
     events:
