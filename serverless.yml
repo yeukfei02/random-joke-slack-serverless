@@ -17,8 +17,16 @@ functions:
     handler: src/getJoke/handler.getJoke
     events:
       - http:
-          path: /api/get-joke
-          method: get
+          path: /api/joke/get-joke
+          method: post
+          cors: true
+  
+  getJokeByType:
+    handler: src/getJokeByType/handler.getJokeByType
+    events:
+      - http:
+          path: /api/joke/get-joke-by-type
+          method: post
           cors: true
 
 plugins:

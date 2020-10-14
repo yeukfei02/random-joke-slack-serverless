@@ -7,28 +7,32 @@ env.config();
 
 import { Joke } from '../../interface/Joke';
 
-export const getJoke: Handler = async (event: any) => {
-  const jokeResult: Joke = await getJokeRequest();
-  console.log('jokeResult = ', jokeResult);
+export const getJokeByType: Handler = async (event: any) => {
+  if (event.qureyStringParameters) {
+    const type = event.qureyStringParameters.type;
+    const jokeResult: Joke = await getJokeByTypeRequest(type);
+    console.log('jokeResult = ', jokeResult);
 
-  if (!_.isEmpty(jokeResult)) {
-    const message = `*Setup:* ${jokeResult.setup}\n*Punchline:* ${jokeResult.punchline}`;
-    await sendMessageToSlackChannel(message);
+    if (!_.isEmpty(jokeResult)) {
+      const result = jokeResult[0];
+      const message = `*Setup:* ${result.setup}\n*Punchline:* ${result.punchline}`;
+      await sendMessageToSlackChannel(message);
+    }
   }
 
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'getJoke',
+      message: 'getJokeByType',
     }),
   };
   return response;
 };
 
-async function getJokeRequest() {
+async function getJokeByTypeRequest(type: string) {
   let result: any = {};
 
-  const response = await axios.get(`https://official-joke-api.appspot.com/jokes/random`);
+  const response = await axios.get(`https://official-joke-api.appspot.com/jokes/${type}/random`);
   if (response) {
     const responseData = response.data;
     if (responseData) {
