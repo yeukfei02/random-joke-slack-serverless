@@ -4,7 +4,7 @@ random-joke-slack-serverless
 
 documentation: https://documenter.getpostman.com/view/3827865/TVRoYmZG
 
-api url: https://f6s7gvdr4j.execute-api.ap-southeast-1.amazonaws.com/v1/api
+api url: https://f6s7gvdr4j.execute-api.ap-southeast-1.amazonaws.com/v1/api/joke
 
 ## Requirement:
 
