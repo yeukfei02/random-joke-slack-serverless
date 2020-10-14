@@ -20,7 +20,7 @@ export const getJokeByType: Handler = async (event: any) => {
 
   console.log('type = ', type);
   if (type) {
-    const jokeResult: Joke = await getJokeByTypeRequest(type);
+    const jokeResult: Joke[] = await getJokeByTypeRequest(type);
     console.log('jokeResult = ', jokeResult);
 
     if (!_.isEmpty(jokeResult)) {
