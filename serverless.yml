@@ -1,3 +1,5 @@
+org: yeukfei02
+app: random-joke-slack-serverless
 service: random-joke-slack-serverless
 
 frameworkVersion: '2'
