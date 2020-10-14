@@ -8,8 +8,9 @@ env.config();
 import { Joke } from '../../interface/Joke';
 
 export const getJokeByType: Handler = async (event: any) => {
-  if (event.qureyStringParameters) {
-    const type = event.qureyStringParameters.type;
+  const body = JSON.parse(event.body);
+  if (body) {
+    const type = body.text;
     const jokeResult: Joke = await getJokeByTypeRequest(type);
     console.log('jokeResult = ', jokeResult);
 
