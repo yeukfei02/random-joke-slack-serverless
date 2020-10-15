@@ -1,6 +1,9 @@
-# random-joke-slack-serverless
+<p align="center">
+  <img width="200px" src="https://github.com/yeukfei02/random-joke-slack-serverless/blob/master/joke.png"><br/>
+  <h2 align="center">random-joke-slack-serverless</h2>
+</p>
 
-random-joke-slack-serverless
+A random joke slack app build in serverless
 
 documentation: https://documenter.getpostman.com/view/3827865/TVRoYmZG
 
