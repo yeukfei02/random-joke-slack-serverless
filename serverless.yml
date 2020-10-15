@@ -11,6 +11,7 @@ provider:
   region: ap-southeast-1
   environment:
     NODE_ENV: production
+    SLACK_OAUTH_TOKEN: ${params:SLACK_OAUTH_TOKEN}
 
 functions:
   main:
