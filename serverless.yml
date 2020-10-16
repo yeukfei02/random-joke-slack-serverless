@@ -12,10 +12,18 @@ provider:
   environment:
     NODE_ENV: production
     SLACK_OAUTH_TOKEN: ${param:SLACK_OAUTH_TOKEN}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "xray:PutTraceSegments"
+        - "xray:PutTelemetryRecords"
+      Resource:
+        - "*"
 
 functions:
   main:
     handler: src/getMain/handler.getMain
+    tracing: true
     events:
       - http:
           path: /api/joke
@@ -24,6 +32,7 @@ functions:
 
   getJoke:
     handler: src/getJoke/handler.getJoke
+    tracing: true
     events:
       - http:
           path: /api/joke/get-joke
@@ -32,6 +41,7 @@ functions:
   
   getJokeByType:
     handler: src/getJokeByType/handler.getJokeByType
+    tracing: true
     events:
       - http:
           path: /api/joke/get-joke-by-type
