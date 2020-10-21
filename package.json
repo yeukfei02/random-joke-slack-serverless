@@ -1,6 +1,6 @@
 {
   "name": "random-joke-slack-serverless",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "main": "app.js",
   "repository": "https://github.com/yeukfei02/random-joke-slack-serverless.git",
   "author": "Donald Wu <yeukfei02@gmail.com>",
@@ -13,7 +13,7 @@
     "dotenv": "^8.2.0",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "moment-timezone": "^0.5.31"    
+    "moment-timezone": "^0.5.31"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.64",
