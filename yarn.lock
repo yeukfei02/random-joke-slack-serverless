@@ -1903,6 +1903,11 @@ atomic-batcher@^1.0.2:
   resolved "https://registry.yarnpkg.com/atomic-batcher/-/atomic-batcher-1.0.2.tgz#d16901d10ccec59516c197b9ccd8930689b813b4"
   integrity sha1-0WkB0QzOxZUWwZe5zNiTBom4E7Q=
 
+aws-info@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/aws-info/-/aws-info-1.1.0.tgz#847b77824f98c96011b74c7f9436cb4823ec75c3"
+  integrity sha512-ZUWFfYy9Mu5ppoDJr3TxY0UWc4peP3tS5sStgnKkRh3urYalQaZWHewhbDbz40I84PO0xhVdBGut1xQtjum3mw==
+
 aws-lambda@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/aws-lambda/-/aws-lambda-1.0.6.tgz#ba562478264646b51e9dc817d7d25ea468ed011b"
@@ -8125,6 +8130,16 @@ serverless-offline@^6.8.0:
     update-notifier "^4.1.0"
     velocityjs "^2.0.0"
     ws "^7.2.1"
+
+serverless-plugin-split-stacks@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/serverless-plugin-split-stacks/-/serverless-plugin-split-stacks-1.9.3.tgz#3ba1f00643f6ec5d9c2f6613d8abed104ed89868"
+  integrity sha512-ZSPekmIZzN7aWVKSI3PRrVgxf7qLkczHTBUZdb68OzQbaahPga8HFAwpeFvhjMWuxU3YQX/OZSQHZJkUCWnXOw==
+  dependencies:
+    aws-info "^1.0.0"
+    lodash "^4.17.15"
+    semver "^6.3.0"
+    throat "^5.0.0"
 
 serverless-plugin-tracing@^2.0.0:
   version "2.0.0"
