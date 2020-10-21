@@ -52,3 +52,4 @@ plugins:
   - serverless-plugin-typescript
   - serverless-offline
   - serverless-plugin-tracing
+  - serverless-plugin-split-stacks
