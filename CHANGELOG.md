@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.4](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.2.3...v1.2.4) (2020-12-15)
+
+
+### Bug Fixes
+
+* 🐛 fix stage and NODE_ENV ([9a99d32](https://github.com/yeukfei02/random-joke-slack-serverless/commit/9a99d32a6fb45865e462f1cb7d7c3a5b2ff3a03e))
+* 🐛 fix stage and NODE_ENV in master branch ([d65d1bc](https://github.com/yeukfei02/random-joke-slack-serverless/commit/d65d1bc176e4693965a584bb6e1ec92c18343392))
+
 ### [1.2.3](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.2.2...v1.2.3) (2020-10-21)
 
 ### [1.2.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.2.1...v1.2.2) (2020-10-21)
