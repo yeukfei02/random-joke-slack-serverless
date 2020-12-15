@@ -7,10 +7,10 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: dev
+  stage: prod
   region: ap-southeast-1
   environment:
-    NODE_ENV: development
+    NODE_ENV: production
     SLACK_OAUTH_TOKEN: ${param:SLACK_OAUTH_TOKEN}
   iamRoleStatements:
     - Effect: 'Allow'
