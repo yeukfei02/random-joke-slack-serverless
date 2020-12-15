@@ -15,13 +15,13 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/v1/api/joke/get-joke",
+							"raw": "localhost:3000/dev/api/joke/get-joke",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"v1",
+								"dev",
 								"api",
 								"joke",
 								"get-joke"
@@ -113,13 +113,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/v1/api/joke/get-joke-by-type",
+							"raw": "localhost:3000/dev/api/joke/get-joke-by-type",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"v1",
+								"dev",
 								"api",
 								"joke",
 								"get-joke-by-type"
