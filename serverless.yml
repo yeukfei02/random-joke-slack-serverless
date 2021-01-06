@@ -3,12 +3,16 @@ app: random-joke-slack-serverless
 service: random-joke-slack-serverless
 
 frameworkVersion: '2'
+useDotenv: true
 
 provider:
   name: aws
   runtime: nodejs12.x
   stage: prod
   region: ap-southeast-1
+  tracing:
+    apiGateway: true
+    lambda: true
   environment:
     NODE_ENV: production
     SLACK_OAUTH_TOKEN: ${param:SLACK_OAUTH_TOKEN}
@@ -19,11 +23,13 @@ provider:
         - 'xray:PutTelemetryRecords'
       Resource:
         - '*'
+  apiGateway:
+    shouldStartNameWithService: true
+  lambdaHashingVersion: 20201221
 
 functions:
   main:
     handler: src/getMain/handler.getMain
-    tracing: true
     events:
       - http:
           path: /api/joke
@@ -32,7 +38,6 @@ functions:
 
   getJoke:
     handler: src/getJoke/handler.getJoke
-    tracing: true
     events:
       - http:
           path: /api/joke/get-joke
@@ -41,7 +46,6 @@ functions:
 
   getJokeByType:
     handler: src/getJokeByType/handler.getJokeByType
-    tracing: true
     events:
       - http:
           path: /api/joke/get-joke-by-type
@@ -51,5 +55,4 @@ functions:
 plugins:
   - serverless-plugin-typescript
   - serverless-offline
-  - serverless-plugin-tracing
   - serverless-plugin-split-stacks

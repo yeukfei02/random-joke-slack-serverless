@@ -1,3 +1,6 @@
+// import env from 'dotenv';
+// env.config();
+
 import { Handler } from 'aws-lambda';
 import awsXRay from 'aws-xray-sdk';
 import awsSdk from 'aws-sdk';
@@ -6,12 +9,9 @@ awsXRay.captureAWS(awsSdk);
 import axios from 'axios';
 import _ from 'lodash';
 
-import env from 'dotenv';
-env.config();
-
 import { Joke } from '../../interface/Joke';
 
-export const getJokeByType: Handler = async (event: any) => {
+export const getJokeByType: Handler = async (event: any, context: any, callback: any) => {
   const eventBody = event.body;
   const bodyList = eventBody.split('&');
 
