@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.2.4...v1.3.0) (2021-01-06)
+
+
+### Features
+
+* 🎸 add .github folder ([0dd86ab](https://github.com/yeukfei02/random-joke-slack-serverless/commit/0dd86ab4de649250bb86df3cd3d80a8711c4a4da))
+
+
+### Bug Fixes
+
+* 🐛 fix func param ([e0a31c2](https://github.com/yeukfei02/random-joke-slack-serverless/commit/e0a31c2741a741f329adaa542af6b35b8c9d3bc8))
+
 ### [1.2.4](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.2.3...v1.2.4) (2020-12-15)
 
 
