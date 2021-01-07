@@ -26,6 +26,7 @@ provider:
         - '*'
   apiGateway:
     shouldStartNameWithService: true
+    description: random joke slack serverless dev
   lambdaHashingVersion: 20201221
 
 functions:
