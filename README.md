@@ -44,9 +44,6 @@ api url: https://p0klbv0r4c.execute-api.ap-southeast-1.amazonaws.com/prod/api/jo
 ## Testing and run:
 
 ```
-// run function
-$ serverless invoke local --function getJoke
-
 // test api in local
 $ yarn run dev
 
