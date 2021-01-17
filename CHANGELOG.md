@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.3.1...v1.3.2) (2021-01-17)
+
+
+### Bug Fixes
+
+* 🐛 add apiGateway description ([aeaa4e6](https://github.com/yeukfei02/random-joke-slack-serverless/commit/aeaa4e61177f2cefe591a14e5184471b880c9cbd))
+* 🐛 fix apiGateway description in master ([cea17fc](https://github.com/yeukfei02/random-joke-slack-serverless/commit/cea17fc8bfe9d1c015713e7f70693626b2c7e911))
+
 ### [1.3.1](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.3.0...v1.3.1) (2021-01-07)
 
 
