@@ -12,34 +12,46 @@ import _ from 'lodash';
 import { Joke } from '../../interface/Joke';
 
 export const getJokeByType: Handler = async (event: any, context: any, callback: any) => {
+  let response = {};
+
   const eventBody = event.body;
-  const bodyList = eventBody.split('&');
+  if (eventBody) {
+    const bodyList = eventBody.split('&');
 
-  let type = '';
-  bodyList.forEach((item: string, i: number) => {
-    if (item.toLowerCase().startsWith('text')) {
-      type = item.substring(5);
+    let type = '';
+    bodyList.forEach((item: string, i: number) => {
+      if (item.toLowerCase().startsWith('text')) {
+        type = item.substring(5);
+      }
+    });
+
+    console.log('type = ', type);
+    if (type) {
+      const jokeResult: Joke[] = await getJokeByTypeRequest(type);
+      console.log('jokeResult = ', jokeResult);
+
+      if (!_.isEmpty(jokeResult)) {
+        const result = jokeResult[0];
+        const message = `*Setup:* ${result.setup}\n*Punchline:* ${result.punchline}`;
+        await sendMessageToSlackChannel(message);
+      }
     }
-  });
 
-  console.log('type = ', type);
-  if (type) {
-    const jokeResult: Joke[] = await getJokeByTypeRequest(type);
-    console.log('jokeResult = ', jokeResult);
-
-    if (!_.isEmpty(jokeResult)) {
-      const result = jokeResult[0];
-      const message = `*Setup:* ${result.setup}\n*Punchline:* ${result.punchline}`;
-      await sendMessageToSlackChannel(message);
-    }
+    response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: 'getJokeByType',
+      }),
+    };
+  } else {
+    response = {
+      statusCode: 400,
+      body: JSON.stringify({
+        message: 'getJokeByType error, request body is empty',
+      }),
+    };
   }
 
-  const response = {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: 'getJokeByType',
-    }),
-  };
   return response;
 };
 
