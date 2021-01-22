@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.4.0...v1.5.0) (2021-01-22)
+
+
+### Features
+
+* 🎸 add package command ([e119f29](https://github.com/yeukfei02/random-joke-slack-serverless/commit/e119f29232fb7986053699a5a4e0936442ec7cd3))
+* 🎸 add serverless-prune-plugin ([10f56e9](https://github.com/yeukfei02/random-joke-slack-serverless/commit/10f56e95b1b394bdd6c61163fc8f3275e35ff482))
+
+
+### Bug Fixes
+
+* 🐛 update sls lib ([caaa8d9](https://github.com/yeukfei02/random-joke-slack-serverless/commit/caaa8d90a214daf1aae11d686142b252b846dfa7))
+
 ## [1.4.0](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.3.2...v1.4.0) (2021-01-22)
 
 
