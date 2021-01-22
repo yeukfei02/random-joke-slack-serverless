@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.3.2...v1.4.0) (2021-01-22)
+
+
+### Features
+
+* 🎸 update sls lib ([58fd572](https://github.com/yeukfei02/random-joke-slack-serverless/commit/58fd572b1ae2ba56c2297c1edd3954f672646744))
+
 ### [1.3.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.3.1...v1.3.2) (2021-01-17)
 
 
