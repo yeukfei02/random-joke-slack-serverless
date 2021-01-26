@@ -1,7 +1,9 @@
 import { Handler } from 'aws-lambda';
 import awsXRay from 'aws-xray-sdk';
 import awsSdk from 'aws-sdk';
-awsXRay.captureAWS(awsSdk);
+if (process.env._X_AMZN_TRACE_ID) {
+  awsXRay.captureAWS(awsSdk);
+}
 
 export const getMain: Handler = async (event: any, context: any, callback: any) => {
   const response = {
