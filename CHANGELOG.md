@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.5.1...v1.5.2) (2021-01-27)
+
+
+### Bug Fixes
+
+* 🐛 add remove command ([b2d611e](https://github.com/yeukfei02/random-joke-slack-serverless/commit/b2d611eae4d10afd3d2d9c5b1cb45d52a12cd654))
+
 ### [1.5.1](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.5.0...v1.5.1) (2021-01-26)
 
 
