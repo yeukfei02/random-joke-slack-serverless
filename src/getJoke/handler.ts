@@ -1,7 +1,7 @@
 // import env from 'dotenv';
 // env.config();
 
-import { Handler } from 'aws-lambda';
+import { APIGatewayEvent, Context, Callback, Handler } from 'aws-lambda';
 import awsXRay from 'aws-xray-sdk';
 import awsSdk from 'aws-sdk';
 if (process.env._X_AMZN_TRACE_ID) {
@@ -13,7 +13,7 @@ import _ from 'lodash';
 
 import { Joke } from '../../interface/Joke';
 
-export const getJoke: Handler = async (event: any, context: any, callback: any) => {
+export const getJoke: Handler = async (event: APIGatewayEvent, context: Context, callback: Callback) => {
   const jokeResult: Joke = await getJokeRequest();
   console.log('jokeResult = ', jokeResult);
 
