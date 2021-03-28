@@ -11,6 +11,7 @@ if (process.env._X_AMZN_TRACE_ID) {
 import axios from 'axios';
 import _ from 'lodash';
 
+import { sendMessageToSlackChannel } from '../../common/common';
 import { Joke } from '../../interface/Joke';
 
 export const getJoke: Handler = async (event: APIGatewayEvent, context: Context, callback: Callback) => {
@@ -43,21 +44,4 @@ async function getJokeRequest() {
   }
 
   return result;
-}
-
-async function sendMessageToSlackChannel(message: string) {
-  const response = await axios.get(`https://slack.com/api/chat.postMessage`, {
-    params: {
-      token: process.env.SLACK_OAUTH_TOKEN,
-      channel: 'random',
-      text: message,
-    },
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-  if (response) {
-    const responseData = response.data;
-    console.log('responseData = ', responseData);
-  }
 }
