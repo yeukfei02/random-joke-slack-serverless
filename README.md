@@ -5,9 +5,9 @@
 
 A random joke slack app build in serverless
 
-documentation: https://documenter.getpostman.com/view/3827865/TVRoYmZG
+documentation: <https://documenter.getpostman.com/view/3827865/TVRoYmZG>
 
-api url: https://p0klbv0r4c.execute-api.ap-southeast-1.amazonaws.com/prod/api/joke
+api url: <https://p0klbv0r4c.execute-api.ap-southeast-1.amazonaws.com/prod/api/joke>
 
 <p align="center">
   <img width="800px" src="https://github.com/yeukfei02/random-joke-slack-serverless/blob/main/tutorial.png?raw=true">
@@ -35,15 +35,15 @@ api url: https://p0klbv0r4c.execute-api.ap-southeast-1.amazonaws.com/prod/api/jo
 
 5. get the `oauth token`
 
-## Requirement:
+## Requirement
 
 - install yarn
 - install node (v12+)
 - install serverless
 
-## Testing and run:
+## Testing and run
 
-```
+```zsh
 // test api in local
 $ yarn run dev
 
