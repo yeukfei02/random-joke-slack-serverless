@@ -17,13 +17,15 @@ provider:
   environment:
     NODE_ENV: production
     SLACK_OAUTH_TOKEN: ${param:SLACK_OAUTH_TOKEN}
-  iamRoleStatements:
-    - Effect: 'Allow'
-      Action:
-        - 'xray:PutTraceSegments'
-        - 'xray:PutTelemetryRecords'
-      Resource:
-        - '*'
+  iam:
+    role:
+      statements:
+        - Effect: 'Allow'
+          Action:
+            - 'xray:PutTraceSegments'
+            - 'xray:PutTelemetryRecords'
+          Resource:
+            - '*'
   apiGateway:
     shouldStartNameWithService: true
     description: random joke slack serverless prod
