@@ -7,7 +7,7 @@ A random joke slack app build in serverless
 
 documentation: <https://documenter.getpostman.com/view/3827865/TVRoYmZG>
 
-<!-- api url: <https://p0klbv0r4c.execute-api.ap-southeast-1.amazonaws.com/prod/api/joke> -->
+api url: <https://g6jddvj09h.execute-api.ap-southeast-1.amazonaws.com/prod/api/joke>
 
 <p align="center">
   <img width="800px" src="https://github.com/yeukfei02/random-joke-slack-serverless/blob/main/tutorial.png?raw=true">
