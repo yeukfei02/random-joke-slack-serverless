@@ -58,11 +58,17 @@ functions:
 
 plugins:
   - serverless-prune-plugin
+  - serverless-layers
   - serverless-plugin-typescript
   - serverless-offline
   - serverless-plugin-split-stacks
 
 custom:
+  serverless-layers:
+    - common:
+        packageManager: yarn
+        dependenciesPath: ./package.json
+        layersDeploymentBucket: random-joke-slack-serverless-serverless-layers
   prune:
     automatic: true
     number: 3
