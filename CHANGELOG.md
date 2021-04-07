@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.6.1...v1.7.0) (2021-04-07)
+
+
+### Features
+
+* 🎸 use serverless-layers ([e9bfe9e](https://github.com/yeukfei02/random-joke-slack-serverless/commit/e9bfe9e67cc7aeb6831b14854fc60655e0038632))
+
+
+### Bug Fixes
+
+* 🐛 comment deploy.yml ([c4b198b](https://github.com/yeukfei02/random-joke-slack-serverless/commit/c4b198b829b814c81c256819e1668155865ad085))
+* 🐛 fix sls.yml readme.md ([72d2b48](https://github.com/yeukfei02/random-joke-slack-serverless/commit/72d2b48b016bbd08f00e5b22231725d9819d9021))
+* 🐛 try add stage in deploy.yml ([8c88d61](https://github.com/yeukfei02/random-joke-slack-serverless/commit/8c88d61ed9d9ad7b8aaebe6e48cef5ad9189abb1))
+* 🐛 update serverless-plugin-split-stacks lib ([fd2220a](https://github.com/yeukfei02/random-joke-slack-serverless/commit/fd2220a50332c052039bd68d9f109ee00fd8217d))
+* 🐛 update sls lib ([cd4e052](https://github.com/yeukfei02/random-joke-slack-serverless/commit/cd4e052922acfac9862f7fa50c463c1362fed4d5))
+
 ### [1.6.1](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.6.0...v1.6.1) (2021-03-28)
 
 
