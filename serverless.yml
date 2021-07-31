@@ -7,7 +7,7 @@ useDotenv: true
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   stage: prod
   region: ap-southeast-1
   apiName: random-joke-slack-serverless-prod
@@ -61,7 +61,7 @@ plugins:
   - serverless-layers
   - serverless-plugin-typescript
   - serverless-offline
-  - serverless-plugin-split-stacks
+  # - serverless-plugin-split-stacks
 
 custom:
   serverless-layers:
