@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.7.1...v1.7.2) (2021-11-25)
+
+
+### Bug Fixes
+
+* 🐛 rename to helpers and use data as file ([8a40a41](https://github.com/yeukfei02/random-joke-slack-serverless/commit/8a40a41389a71eea489dbfa8237167240c2982b5))
+
 ### [1.7.1](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.7.0...v1.7.1) (2021-07-31)
 
 
