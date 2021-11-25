@@ -55,7 +55,7 @@ export const getJokeByType: Handler = async (event: APIGatewayEvent, context: Co
         }
       } else {
         response = {
-          statusCode: 400,
+          statusCode: 200,
           body: JSON.stringify({
             message: 'getJokeByType error, type can only be general or programming',
           }),
