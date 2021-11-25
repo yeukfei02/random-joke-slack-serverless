@@ -41,7 +41,7 @@ export const getJokeByType: Handler = async (event: APIGatewayEvent, context: Co
           console.log('jokeResult = ', jokeResult);
 
           if (!_.isEmpty(jokeResult)) {
-            const result = jokeResult[0];
+            const result = _.sample(jokeResult) as Joke;
             const message = `*Setup:* ${result.setup}\n*Punchline:* ${result.punchline}`;
             await sendMessageToSlackChannel(message);
 
