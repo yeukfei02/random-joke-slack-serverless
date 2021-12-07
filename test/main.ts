@@ -2,9 +2,9 @@ import lambdaTester from 'lambda-tester';
 
 import { getMain } from '../src/getMain/handler';
 
-export const getMainTest = (): void => {
-  describe('getMain test', () => {
-    test('getMain test', async () => {
+export const mainTest = (): void => {
+  describe('main test', () => {
+    test('main', async () => {
       return lambdaTester(getMain)
         .event({})
         .expectResult((result: any) => {

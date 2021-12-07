@@ -4,7 +4,7 @@ import { getJoke } from '../src/getJoke/handler';
 
 export const getJokeTest = (): void => {
   describe('getJoke test', () => {
-    test('getJoke test', async () => {
+    test('getJoke', async () => {
       return lambdaTester(getJoke)
         .event({})
         .expectResult((result: any) => {
