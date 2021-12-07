@@ -1,7 +1,7 @@
-import { getMainTest } from './main';
+import { mainTest } from './main';
 import { getJokeTest } from './getJoke';
 
 describe('testSuite test case', () => {
-  getMainTest();
+  mainTest();
   getJokeTest();
 });
