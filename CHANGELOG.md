@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.7.2...v1.8.0) (2022-01-12)
+
+
+### Features
+
+* 🎸 update sls lib and use arm64 architecture ([55f348a](https://github.com/yeukfei02/random-joke-slack-serverless/commit/55f348a81708dcc8ede2d9761cc7267a6c779a84))
+
+
+### Bug Fixes
+
+* 🐛 add random result to joke result list ([f9099f8](https://github.com/yeukfei02/random-joke-slack-serverless/commit/f9099f82eb09d575a9298131bd83e18283d7bf62))
+* 🐛 fix test case ([e70e275](https://github.com/yeukfei02/random-joke-slack-serverless/commit/e70e275a53e9fbfcacc1d967750c569c7e6ef5a4))
+* 🐛 fix wrong type status code ([10f8825](https://github.com/yeukfei02/random-joke-slack-serverless/commit/10f8825c619bc20f4a7d201b49a90bccc2cc3fe5))
+
 ### [1.7.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.7.1...v1.7.2) (2021-11-25)
 
 
