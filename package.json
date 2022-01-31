@@ -1,6 +1,6 @@
 {
   "name": "random-joke-slack-serverless",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "main": "app.js",
   "repository": "https://github.com/yeukfei02/random-joke-slack-serverless.git",
   "author": "Donald Wu <yeukfei02@gmail.com>",
