@@ -69,6 +69,3 @@ custom:
         packageManager: yarn
         dependenciesPath: ./package.json
         layersDeploymentBucket: random-joke-slack-serverless-serverless-layers
-  prune:
-    automatic: true
-    number: 3
