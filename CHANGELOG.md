@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.2](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.8.1...v1.8.2) (2022-09-13)
+
+
+### Bug Fixes
+
+* 🐛 remove callback and update sls lib ([9c27b76](https://github.com/yeukfei02/random-joke-slack-serverless/commit/9c27b763adead0fbe8c3080409d6de37634faca5))
+* 🐛 remove postman collection json ([f7a048d](https://github.com/yeukfei02/random-joke-slack-serverless/commit/f7a048d8a70ed5dabff00b9f3018401f2f768a27))
+* 🐛 update serverless.yml ([ac04e3b](https://github.com/yeukfei02/random-joke-slack-serverless/commit/ac04e3b09065332ffaf600e9fc272990195ee3f8))
+* 🐛 update sls lib, husky and readme.md ([2761d6a](https://github.com/yeukfei02/random-joke-slack-serverless/commit/2761d6a42c66de319487507ec49b20321e6bcb19))
+* 🐛 update sls.yml ([b09940e](https://github.com/yeukfei02/random-joke-slack-serverless/commit/b09940ebce413ffbd80dbeab3c398b6866eb89d1))
+
 ### [1.8.1](https://github.com/yeukfei02/random-joke-slack-serverless/compare/v1.8.0...v1.8.1) (2022-01-31)
 
 
